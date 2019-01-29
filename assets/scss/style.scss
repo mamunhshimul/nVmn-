@@ -97,3 +97,36 @@ background: linear-gradient(135deg, rgba(73,155,234,1) 0%, rgba(73,155,234,1) 52
   margin:auto;
  
 }
+/*========== end service-area =========*/
+.marGin_0{
+  margin: 0;
+  padding:0;
+}
+.service-box{
+  box-shadow: 0 0 5px black;
+  margin: 3% 5px;
+}
+
+.mAAAmun{
+   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.service-box:hover{
+   opacity: .8;
+}
+.service-box i{
+  margin-top: 10%;
+  font-size: 5em;
+}
+.service-box h3{
+  font-size: 22px;
+  font-weight: bold;
+margin: 2% 0 1% 0;
+}
+.service-box p{
+     padding-bottom: 10%;
+}
