@@ -85,4 +85,25 @@ body {
   background: linear-gradient(135deg, #499bea 0%, #499bea 52%, #b267cf 83%, #b267cf 100%);
 }
 
+/*========== about-area =========*/
+#about-area {
+  margin: 12% 0 8% 0;
+}
+
+.about-content h2 {
+  font-size: 21px;
+  font-weight: bold;
+  margin: 10% 0 2% 0;
+}
+
+.about-bg {
+  height: 380px;
+  overflow: hidden;
+}
+
+.about-bg img {
+  width: 100%;
+  margin: auto;
+}
+
 /*# sourceMappingURL=style.css.map */
