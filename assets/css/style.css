@@ -14,6 +14,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 p {
   color: #787878;
+  font-size: 16px;
 }
 
 a, a:hover {
@@ -98,15 +99,22 @@ a, a:hover {
   background: linear-gradient(135deg, #499bea 0%, #499bea 52%, #b267cf 83%, #b267cf 100%);
 }
 
+/*    Mobile Layout: 320px. */
 /*========== about-area =========*/
 #about-area {
   margin: 12% 0 6% 0;
 }
 
+.about-content h1 {
+  font-weight: bold;
+  margin: 6% 0 2% 0;
+  color: #499bea;
+}
+
 .about-content h2 {
-  font-size: 21px;
+  font-size: 20px;
   font-weight: bolder;
-  margin: 10% 0 2% 0;
+  margin: 1% 0 2% 0;
 }
 
 .about-bg {
@@ -119,6 +127,20 @@ a, a:hover {
   margin: auto;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-content {
+    height: 290px;
+    overflow: hidden;
+  }
+}
+/*    Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+  .about-content {
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 5%;
+  }
+}
 /*==========   service-area =========*/
 #service-area {
   margin: 6% 0;
@@ -126,7 +148,8 @@ a, a:hover {
 
 #service-area h1 {
   font-weight: bold;
-  margin: 1%;
+  margin-top: 12%;
+  margin-bottom: 2%;
   color: #499bea;
 }
 
@@ -168,19 +191,39 @@ a, a:hover {
   padding-bottom: 10%;
 }
 
-/*========== service-area =========*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #service-area h1 {
+    text-align: center;
+  }
+
+  .service-box h3 {
+    font-size: 17px;
+  }
+}
+/*    Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+  .about-content {
+    font-size: 13px;
+    margin-bottom: 5%;
+  }
+
+  #service-area h1 {
+    margin: 6% 0;
+    text-align: center;
+  }
+}
+/*========== blog-area =========*/
 #blog-area h1 {
   margin-bottom: 2%;
 }
 
-.single-blog-bg {
-  height: 280px;
-  overflow: hidden;
+.single-blog p:nth-of-type(1) {
+  padding-top: 2%;
 }
 
 .single-blog-bg img {
   width: 100%;
-  transition: 1s;
+  height: auto;
 }
 
 .single-blog a h3 {
@@ -190,5 +233,41 @@ a, a:hover {
 .single-blog a h3:hover {
   color: #499bea;
 }
+
+#single-blog-btn:hover {
+  color: #499bea;
+}
+
+/*========== footer-area =========*/
+#footer-area {
+  background: url(../images/slider-bg.jpg) no-repeat;
+  background-size: cover;
+  height: 250px;
+  z-index: 1;
+  position: relative;
+  margin-top: 6%;
+}
+
+#footer-area:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.6;
+  background: #499bea;
+  background: -moz-linear-gradient(-45deg, #499bea 0%, #499bea 52%, #b267cf 83%, #b267cf 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, #499bea), color-stop(52%, #499bea), color-stop(83%, #b267cf), color-stop(100%, #b267cf));
+  background: -webkit-linear-gradient(-45deg, #499bea 0%, #499bea 52%, #b267cf 83%, #b267cf 100%);
+  background: -o-linear-gradient(-45deg, #499bea 0%, #499bea 52%, #b267cf 83%, #b267cf 100%);
+  background: -ms-linear-gradient(-45deg, #499bea 0%, #499bea 52%, #b267cf 83%, #b267cf 100%);
+  background: linear-gradient(135deg, #499bea 0%, #499bea 52%, #b267cf 83%, #b267cf 100%);
+}
+
+/*   Tablet Layout: 768px. */
+/*    Mobile Layout: 320px. */
+/*    Wide Mobile Layout: 480px. */
 
 /*# sourceMappingURL=style.css.map */
