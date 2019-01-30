@@ -8,6 +8,19 @@ body {
   font-family: Open Sans, sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+p {
+  color: #787878;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: black;
+}
+
 /*========== header-area =========*/
 #header-area {
   position: fixed;
@@ -87,12 +100,12 @@ body {
 
 /*========== about-area =========*/
 #about-area {
-  margin: 12% 0 8% 0;
+  margin: 12% 0 6% 0;
 }
 
 .about-content h2 {
   font-size: 21px;
-  font-weight: bold;
+  font-weight: bolder;
   margin: 10% 0 2% 0;
 }
 
@@ -104,6 +117,78 @@ body {
 .about-bg img {
   width: 100%;
   margin: auto;
+}
+
+/*==========   service-area =========*/
+#service-area {
+  margin: 6% 0;
+}
+
+#service-area h1 {
+  font-weight: bold;
+  margin: 1%;
+  color: #499bea;
+}
+
+.marGin_0 {
+  margin: 0;
+  padding: 0;
+}
+
+.service-box {
+  box-shadow: 0 0 5px black;
+  margin: 3% 5px;
+}
+
+.mAAAmun {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.service-box:hover {
+  opacity: 0.8;
+}
+
+.service-box i {
+  margin-top: 10%;
+  font-size: 5em;
+}
+
+.service-box h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 2% 0 1% 0;
+}
+
+.service-box p {
+  padding-bottom: 10%;
+}
+
+/*========== service-area =========*/
+#blog-area h1 {
+  margin-bottom: 2%;
+}
+
+.single-blog-bg {
+  height: 280px;
+  overflow: hidden;
+}
+
+.single-blog-bg img {
+  width: 100%;
+  transition: 1s;
+}
+
+.single-blog a h3 {
+  transition: 0.8s;
+}
+
+.single-blog a h3:hover {
+  color: #499bea;
 }
 
 /*# sourceMappingURL=style.css.map */
